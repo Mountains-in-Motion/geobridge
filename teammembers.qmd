@@ -1,0 +1,94 @@
+---
+format:
+  html:
+    page-layout: full
+css: member-styles.scss 
+---
+
+```{=html}
+<div class="page-header">
+    <p><h1>Meet Our Team</h1></p>
+    <p>Welcome to our team page! Below you'll find information about the dedicated individuals who make our work possible.</p>
+</div>
+
+<div class="members-background-box">
+  <div class="members-container">
+    <div class="member-circle">
+      <a href="suzette.qmd">
+        <img src="img/suzette.jpg" alt="Suzette Flantua" class="member-image">
+      </a>
+      <p>Suzette Flantua</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="benjamin.qmd">
+        <img src="img/benjamin.jpg" alt="Benjamin Robson" class="member-image">
+      </a>
+      <p>Benjamin Robson</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="augusto.qmd">
+        <img src="img/augusto.jpeg" alt="Augusto Lima" class="member-image">
+      </a>
+      <p>Augusto Lima</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="daniel.qmd">
+        <img src="img/daniel.png" alt="Daniel Thomas" class="member-image">
+      </a>
+      <p>Daniel Thomas</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="gidske.qmd">
+        <img src="img/gidske.jpg" alt="Gidske Andersen" class="member-image">
+      </a>
+      <p>Gidske Andersen</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="eline.qmd">
+        <img src="img/eline.jpg" alt="Eline Rentier" class="member-image">
+      </a>
+      <p>Eline Rentier</p>
+    </div>  
+  
+    <div class="member-circle">
+      <a href="lotta.qmd">
+        <img src="img/lotta.jpg" alt="Lotta Schultz" class="member-image">
+      </a>
+      <p>Lotta Schultz</p>
+    </div> 
+
+    <div class="member-circle">
+      <a href="julien.qmd">
+        <img src="img/julien.jpg" alt="Julien Vadnais" class="member-image">
+      </a>
+      <p>Julien Vadnais</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="yiyao.qmd">
+        <img src="img/yiyao.jpg" alt="Yiyao Chen" class="member-image">
+      </a>
+      <p>Yiyao Chen</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="nina.qmd">
+        <img src="img/nina.jpg" alt="Nina Hećej" class="member-image">
+      </a>
+      <p>Nina Hećej</p>
+    </div>
+
+    <div class="member-circle">
+      <a href="hanif.qmd">
+        <img src="img/hanif.jpeg" alt="Hanif Kawousi" class="member-image">
+      </a>
+      <p>Hanif Kawousi</p>
+    </div>
+  </div>
+</div>
+```

@@ -14,16 +14,31 @@ website:
     
     # your sub-pages
     left:
-      - href: seminars.qmd
-        text: Monthly Seminar Series
-      - href: uavworkshop.qmd
-        text: UAV and RS Workshop
-    
+      - href: about.qmd
+        text: About
+      - text: Monthly Seminar Series
+        menu:
+          - href: seminars.qmd
+            text: About the MSS
+          - href: joinmss.qmd
+            text: Join the MSS
+      - text: Team & Projects
+        menu:
+          - href: teammembers.qmd
+            text: Our Team
+          - href: openprojects.qmd
+            text: Open Projects
+          - href: joinus.qmd
+            text: Join the Team!
+      - text: Archive
+        menu:
+          - href: uavworkshop.qmd
+            text: UAV and RS Workshop
 
 # Don't touch unless you know what you are doing :) ------------
   page-footer: 
     left: |
-      <div id="fixed-copyright">© 2025 Augusto Lima & Sjur Barndon</div>
+      <div id="fixed-copyright">© 2025 Augusto Lima</div>
     right: |
       <span class="faux-block">
         <a href="https://www.uva.nl/en">
@@ -43,6 +58,8 @@ website:
 project:
   type: website
   output-dir: docs
+  resources:
+    - img/**
 
   preview:
     browser: true
@@ -55,6 +72,11 @@ format:
     theme: 
       - pulse
       - styles.scss
+      - member-styles.scss
+      - profile-styles.scss
+      - index-styles.scss
+      - about-styles.scss
+      - joinmss-styles.scss
     toc: false
     code-link: true
     anchor-sections: true
