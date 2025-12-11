@@ -89,6 +89,13 @@ css: member-styles.scss
       </a>
       <p>Hanif Kawousi</p>
     </div>
+
+    <div class="member-circle">
+      <a href="harry.qmd">
+        <img src="img/Harry.jJPG" alt="Harry Seijmonsbergen" class="member-image">
+      </a>
+      <p>Harry Seijmonsbergen</p>
+    </div>
   </div>
 </div>
 ```
