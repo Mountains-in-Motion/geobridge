@@ -1,0 +1,63 @@
+---
+format:
+  html:
+    page-layout: full
+    code-fold: true
+    smooth-scroll: true
+    toc: true
+css: profile-styles.scss
+---
+
+<!-- load Bootstrap Icons once (for the social icons) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+```{=html}
+<div class="profile-container">
+  <!-- Profile Photo Section -->
+  <div class="profile-photo-section">
+    <img src="img/Harry.JPG" alt="Harry Seijmonsbergen" class="profile-image">
+   
+   <div class="profile-social">
+      <a href="A.C.Seijmonsbergen@uva.nl" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://scholar.google.com/citations?user=IYUVW0AAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+      <a href="https://orcid.org/0000-0002-7454-7637" target="_blank" rel="noopener" aria-label="ORCID"><i class="bi bi-person-badge"></i></a>
+      <a href="https://www.linkedin.com/in/harry-seijmonsbergen-0026663/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://ibed.uva.nl/profile/s/e/a.c.seijmonsbergen/a.c.seijmonsbergen.html?cb" target="_blank" rel="noopener" aria-label="Website"><i class="bi bi-globe2"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="profile-content">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-name">Harry Seijmonsbergen</div>
+    </div>
+    
+    <!-- Profile Description -->
+    <div class="profile-description">
+      <p>Assistant professor in Geodiversity and Remote Sensing affiliated with the <a href="https://www.biomac.org/">Biogeography and Macroecology</a> research group withing the <a href="https://ibed.uva.nl/content/research-departments/theoretical-and-computational-ecology/theoretical-and-computational-ecology.html">Department of Theoretical and Computational Ecology</a> in the <a href="https://ibed.uva.nl/">Institute for Biodiversity and Ecosystem Dynamics</a> at the University of Amsterdam. Prof. Dr. Harry Seijmonsbergen's <strong>research interests</strong> is focused on understanding the spatial and temporal distribution and quantification of components of the Earth system, specifically :</p>
+      
+      <ul class="mb-0">
+        <li>Geomorphological mapping using automated workflow LiDAR data, aerial photography and GIS.</li>
+        <li>Geodiversity mapping across scales in relation to ecosystem functioning, SDGs and the energy transition.</li>
+        <li>Land Use and Land Cover change analysis using filed information, GIAS and Remote Sensing.</li>
+      </ul>
+    </div>
+
+    <!-- Research Projects Section -->
+    <div class="page-header">
+      <h2>Research Projects</h2>
+    </div>
+      
+    <div class="members-background-box">
+      <p><strong>Geodiversity dynamics, global change, and environmental management:</strong> geodiversity assessments of terrestrial and marine land- and seascapes are underrepresented in environmental management. The spatial and temporal response of geodiversity components to climate and human activities across scales is imperative for current and future sustainable landscape management.</p>
+      <ul class="mb-0">
+        <li>We include global, regional and local data to develop methods to analyze patterns of geodiversity and its components.
+        <li>We promote research that incorporates geodiversity components in the context of the sustainable development goals and/or planetary boundaries.
+        <li>We focus on landscape evolution in alpine mountain ranges (glacia, fluvial and gravity drive processes) and on sandy/muddy coastal ecosystems studying the impacts of coastal squeezing. 
+      </ul>
+    </div>
+  </div>
+</div>
+```
+

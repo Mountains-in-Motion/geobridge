@@ -36,7 +36,7 @@ css: profile-styles.scss
     
     <!-- Profile Description -->
     <div class="profile-description">
-      <p>PhD Candidate in Global Change Ecology affiliated with the <a href="https://w4.uib.no/en/research/research-groups/terrestrial-ecology">Terrestrial Ecology</a> research group and the <a href="https://mountainsinmotion.w.uib.no/">Mountains in Motion</a> research groups within the Department of Biological Sciences and Bjerknes Centre for Climate Research at the University of Bergen. Eline Rentier's <strong>research interests</strong> include:</p>
+      <p>PhD Candidate in Global Change Ecology affiliated with the <a href="https://w4.uib.no/en/research/research-groups/terrestrial-ecology">Terrestrial Ecology</a> research group in the <a href="https://mountainsinmotion.w.uib.no/">Mountains in Motion</a> research team within the Department of Biological Sciences and associated with the Bjerknes Centre for Climate Research at the University of Bergen. Eline Rentier's <strong>research interests</strong> include:</p>
       
       <ul class="mb-0">
         <li>(Re)constructing geo-ecological dynamics through space and time.</li>

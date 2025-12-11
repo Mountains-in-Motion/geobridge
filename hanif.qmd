@@ -33,7 +33,7 @@ css: profile-styles.scss
     
     <!-- Profile Description -->
     <div class="profile-description">
-      <p>PhD Candidate in Applied Ecology affiliated with the <a href="https://w4.uib.no/en/research/research-groups/terrestrial-ecology">Terrestrial Ecology</a> research group, the <a href="https://betweenthefjords.w.uib.no/home/">Between The Fjords</a>, and the <a href="https://www4.uib.no/en/research/research-centres/centre-for-climate-and-energy-transformation-cet">Centre for Climate and Energy Transition (CET)</a> research groups within the Department of Biological Sciences at the University of Bergen. Hanif Kawousi's <strong>research interests</strong> include:</p>
+      <p>PhD Candidate in Applied Ecology affiliated with the <a href="https://w4.uib.no/en/research/research-groups/terrestrial-ecology">Terrestrial Ecology</a> research group in the the <a href="https://betweenthefjords.w.uib.no/home/">Between The Fjords</a> research team, and the <a href="https://www4.uib.no/en/research/research-centres/centre-for-climate-and-energy-transformation-cet">Centre for Climate and Energy Transition (CET)</a> research centre within the Department of Biological Sciences at the University of Bergen. Hanif Kawousi's <strong>research interests</strong> include:</p>
       
       <ul class="mb-0">
         <li>Eco-evolutionary mismatch under urbanization.</li>

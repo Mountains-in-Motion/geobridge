@@ -47,11 +47,9 @@ css: about-styles.scss
             <hr>
             <div class="gb-stat"><a href="joinmss.html#faq">FAQ</a></div>
             <hr>
-            <div class="gb-stat"><a href="https://www.youtube.com/channel/UCZt7a3ArKzdqt1-BB9TX8bg">Recorded sessions</a></div>
-            <hr>
             <ul class="gb-list">
-                <li><span class="icon">🖥️</span><span> Online format</span></li>
-                <li><span class="icon">📅</span><span>October 2025 to June 2026</span></li>
+                <li><span class="icon">🖥️</span><span>Online format</span></li>
+                <li><span class="icon">📅</span><span>January 2026 to June 2026</span></li>
                 <li><span class="icon">🌍</span><span>Global Audience and Atendees</span></li>
                 <li><span class="icon">🤝</span><span>Interdisciplinary collaboration &amp; knowledge sharing</span></li>
             </ul>

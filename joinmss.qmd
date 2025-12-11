@@ -71,7 +71,7 @@ css: joinmss-styles.scss
 
     <details>
       <summary>Are sessions recorded?</summary>
-      <p>Presenters may choose wether their session in recorded. If consent is given, the recording will be available on our <a href="https://www.youtube.com/channel/UCZt7a3ArKzdqt1-BB9TX8bg">YouTube Channel</a></p>
+      <p>No. Sessions will not be recorded in order to protect and preserve research confidenciality.</p>
     </details>
   </div>
 </div>
