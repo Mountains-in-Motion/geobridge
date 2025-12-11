@@ -92,7 +92,7 @@ css: member-styles.scss
 
     <div class="member-circle">
       <a href="harry.qmd">
-        <img src="img/Harry.jJPG" alt="Harry Seijmonsbergen" class="member-image">
+        <img src="img/Harry.JPG" alt="Harry Seijmonsbergen" class="member-image">
       </a>
       <p>Harry Seijmonsbergen</p>
     </div>
