@@ -35,7 +35,7 @@ css: profile-styles.scss
     
     <!-- Profile Description -->
     <div class="profile-description">
-      <p>Assistant professor in Geodiversity and Remote Sensing affiliated with the <a href="https://www.biomac.org/">Biogeography and Macroecology</a> research group withing the <a href="https://ibed.uva.nl/content/research-departments/theoretical-and-computational-ecology/theoretical-and-computational-ecology.html">Department of Theoretical and Computational Ecology</a> in the <a href="https://ibed.uva.nl/">Institute for Biodiversity and Ecosystem Dynamics</a> at the University of Amsterdam. Prof. Dr. Harry Seijmonsbergen's <strong>research interests</strong> is focused on understanding the spatial and temporal distribution and quantification of components of the Earth system, specifically :</p>
+      <p>Assistant professor in Geodiversity and Remote Sensing affiliated with the <a href="https://www.biomac.org/">Biogeography and Macroecology</a> research group withing the <a href="https://ibed.uva.nl/content/research-departments/theoretical-and-computational-ecology/theoretical-and-computational-ecology.html">Department of Theoretical and Computational Ecology</a> in the <a href="https://ibed.uva.nl/">Institute for Biodiversity and Ecosystem Dynamics</a> at the University of Amsterdam. Dr. Harry Seijmonsbergen's <strong>research interests</strong> is focused on understanding the spatial and temporal distribution and quantification of components of the Earth system, specifically :</p>
       
       <ul class="mb-0">
         <li>Geomorphological mapping using automated workflow LiDAR data, aerial photography and GIS.</li>

@@ -96,6 +96,13 @@ css: member-styles.scss
       </a>
       <p>Harry Seijmonsbergen</p>
     </div>
+
+    <div class="member-circle">
+      <a href="kenneth.qmd">
+        <img src="img/kenneth.png" alt="Kenneth Rijsdijk" class="member-image">
+      </a>
+      <p>Kenneth Rijsdijk</p>
+    </div>
   </div>
 </div>
 ```
