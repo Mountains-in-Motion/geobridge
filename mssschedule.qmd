@@ -1,0 +1,198 @@
+---
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.css">
+          <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
+---
+
+<div id="calendar"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarEl = document.getElementById('calendar');
+
+  // Helper to format "HH:MM" from an ISO datetime string
+  function hhmm(iso) {
+    return iso ? iso.slice(11, 16) : '';
+  }
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    height: 'auto',
+    firstDay: 1,          // Monday
+ 
+    initialDate: '2026-02-01',
+    validRange: {
+      start: '2026-02-01',
+      end: '2026-07-01'
+    },
+
+    // Show time in the month cells (24h format)
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    },
+
+    events: [
+      { title: 'MSS Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
+      { title: 'MSS Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
+      { title: 'MSS Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
+      { title: 'MSS Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
+      { title: 'MSS Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
+      { title: 'MSS Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
+      { title: 'MSS Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
+      { title: 'MSS Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
+      { title: 'MSS Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
+      { title: 'MSS Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
+    ],
+
+    // Hover tooltip (simple + reliable)
+    eventDidMount: function(info) {
+      const start = hhmm(info.event.startStr);
+      const end = info.event.endStr ? hhmm(info.event.endStr) : '';
+      info.el.title = end ? `${info.event.title} (${start}–${end})` : `${info.event.title} (${start})`;
+    }
+  });
+
+  calendar.render();
+});
+</script>
+
+
+
+```{=html}
+<div class="ju-wrap">
+  <p class= "title">Monthly Seminar Series Talk Schedule</p>
+
+  <div class="ju-banner ju-card">
+    <div class="ju-banner-inner">
+      <div>
+        <strong>Want to Talk or Watch?</strong><br/>
+        Subscribe for updates or propose a talk — we’ll get back to you quickly.
+      </div>
+      <div class="ju-banner-actions">
+       <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQzJDRUM4OEFSQkdXQlpTS1BOTE9CQ1gwVi4u&origin=lprLink&route=shorturl">Join mailing list</a>
+      <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQkhGQkxFMlNOWVRZSjNTNVJaTVk5R1lFWC4u&route=shorturl">Propose a talk</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:x:/g/personal/augusto_naschimento_uib_no/EXfj5JpJs6dAgqwwaEASl3wBUR--hPrwcHlqLp0ppNDDrQ?e=YmdMrA">See available dates for talks</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:p:/g/personal/augusto_naschimento_uib_no/EYWphSekdnNPiXNOFh5HByMBi7LIw82K4bqjqSoKeCOUZQ?e=ZaShqm">Guidelines</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ju-faq ju-card ju-pad">
+    <h2>Guest and Talk Details</h2>
+    <details>
+      <summary>February</summary>
+      <p><b>06.02.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Emiel van Loon, from the University of Amsterdam</p>
+      <p><b>Talk:</b> How to interpret map correlations?</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Augusto C. Lima, from the University of Bergen</p>
+      <p><b>Talk:</b> Assessing the influence of supraglacial lakes to the elevational changes of Tapado Glacier, Chile</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>20.02.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
+
+    <details>
+      <summary>March</summary>
+      <p><b>06.03.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Richard Ott, from the University of Amsterdam</p>
+      <p><b>Talk:</b> High-resolution mapping of anthropogenic erosion in the Northern Andes</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>20.03.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Yifang Shi, from the University of Amsterdam</p>
+      <p><b>Talk:</b> Multi-source remote sensing for ecosystem dynamics monitoring</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Dr. Johannes De Groeve, from the University of Amsterdam</p>
+      <p><b>Talk:</b> Reconstruct the past with TABS (Temporal Altitudinal Biogeographic Shifts) </p>
+      <p>abstract here</p>
+    </details>
+
+    <details>
+      <summary>April</summary>
+      <p><b>10.04.2026</b></p>
+      <p><b>Guest 1:</b> Julien Vadnais, from the University of Bergen</p>
+      <p><b>Talk:</b> An end-to-end, open-source workflow for automatic mapping with drones</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>24.04.2026</b></p>
+      <p><b>Guest 1:</b> tdb</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
+
+    <details>
+      <summary>May</summary>
+      <p><b>08.05.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Benjamin Robson, from the University of Bergen</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>22.05.2026</b></p>
+      <p><b>Guest 1:</b> Hanif Kawousi, from the University of Bergen</p>
+      <p><b>Talk:</b> Ground truthing techniques for species distribution maps</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Sjur Barndon, from the University of Bergen</p>
+      <p><b>Talk:</b> Spatial overlap quantification</p>
+      <p>abstract here</p>
+    </details>
+
+    <details>
+      <summary>June</summary>
+      <p><b>05.06.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>19.06.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
+  </div>
+</div>
+```

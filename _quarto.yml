@@ -18,6 +18,8 @@ website:
         text: About
       - text: Monthly Seminar Series
         menu:
+          - href: mssschedule.qmd
+            text: MSS Schedule
           - href: seminars.qmd
             text: About the MSS
           - href: joinmss.qmd

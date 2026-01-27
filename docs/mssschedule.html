@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>julien – GeoBridge</title>
+<title>mssschedule – GeoBridge</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,13 +50,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
 
 
-<link rel="stylesheet" href="profile-styles.scss">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,63 +136,199 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<!-- load Bootstrap Icons once (for the social icons) -->
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"></p>
-<div class="profile-container">
-  <!-- Profile Photo Section -->
-  <div class="profile-photo-section">
-    <img src="img/julien.jpg" alt="Julien Vadnais" class="profile-image">
-   
-   <div class="profile-social">
-      <a href="julien.vadnais@uib.no" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
-      <a href="https://www.researchgate.net/profile/Julien-Vadnais" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
-      <a href="https://orcid.org/0009-0003-2680-8841" target="_blank" rel="noopener" aria-label="ORCID"><i class="bi bi-person-badge"></i></a>
-      <a href="https://www.linkedin.com/in/julien-vadnais-7400a8238/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www4.uib.no/en/find-employees/Julien.Vadnais" target="_blank" rel="noopener" aria-label="Website"><i class="bi bi-globe2"></i></a>
+<div id="calendar">
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarEl = document.getElementById('calendar');
+
+  // Helper to format "HH:MM" from an ISO datetime string
+  function hhmm(iso) {
+    return iso ? iso.slice(11, 16) : '';
+  }
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    height: 'auto',
+    firstDay: 1,          // Monday
+ 
+    initialDate: '2026-02-01',
+    validRange: {
+      start: '2026-02-01',
+      end: '2026-07-01'
+    },
+
+    // Show time in the month cells (24h format)
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    },
+
+    events: [
+      { title: 'MSS Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
+      { title: 'MSS Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
+      { title: 'MSS Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
+      { title: 'MSS Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
+      { title: 'MSS Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
+      { title: 'MSS Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
+      { title: 'MSS Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
+      { title: 'MSS Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
+      { title: 'MSS Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
+      { title: 'MSS Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
+    ],
+
+    // Hover tooltip (simple + reliable)
+    eventDidMount: function(info) {
+      const start = hhmm(info.event.startStr);
+      const end = info.event.endStr ? hhmm(info.event.endStr) : '';
+      info.el.title = end ? `${info.event.title} (${start}–${end})` : `${info.event.title} (${start})`;
+    }
+  });
+
+  calendar.render();
+});
+</script>
+<div class="ju-wrap">
+  <p class="title">Monthly Seminar Series Talk Schedule</p>
+
+  <div class="ju-banner ju-card">
+    <div class="ju-banner-inner">
+      <div>
+        <strong>Want to Talk or Watch?</strong><br>
+        Subscribe for updates or propose a talk — we’ll get back to you quickly.
+      </div>
+      <div class="ju-banner-actions">
+       <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQzJDRUM4OEFSQkdXQlpTS1BOTE9CQ1gwVi4u&amp;origin=lprLink&amp;route=shorturl">Join mailing list</a>
+      <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQkhGQkxFMlNOWVRZSjNTNVJaTVk5R1lFWC4u&amp;route=shorturl">Propose a talk</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:x:/g/personal/augusto_naschimento_uib_no/EXfj5JpJs6dAgqwwaEASl3wBUR--hPrwcHlqLp0ppNDDrQ?e=YmdMrA">See available dates for talks</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:p:/g/personal/augusto_naschimento_uib_no/EYWphSekdnNPiXNOFh5HByMBi7LIw82K4bqjqSoKeCOUZQ?e=ZaShqm">Guidelines</a>
+      </div>
     </div>
   </div>
 
-  <!-- Main Content Section -->
-  <div class="profile-content">
-    <!-- Profile Header -->
-    <div class="profile-header">
-      <div class="profile-name">Julien Vadnais</div>
-    </div>
-    
-    <!-- Profile Description -->
-    <div class="profile-description">
-      <p>PhD Candidate in Geomatics and Remote Sensing affiliated with the <a href="https://www4.uib.no/en/research/research-groups/geodynamics-and-basin-studies">Geodynamic and Basin Studies</a> research group within the Department of Earth Science at the University of Bergen. Julien Vadnais' <strong>research interests</strong> include:</p>
-      
-      <ul class="mb-0">
-        <li>Multispectral and SAR remote sensing in a multitude of topics covering the geosphere, cryosphere and biosphere.</li>
-        <li>Machine learning (computer vision) mapping methods.</li>
-      </ul>
-    </div>
+  <div class="ju-faq ju-card ju-pad">
+    <h2 class="anchored">Guest and Talk Details</h2>
+    <details>
+      <summary>February</summary>
+      <p><b>06.02.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Emiel van Loon, from the University of Amsterdam</p>
+      <p><b>Talk:</b> How to interpret map correlations?</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Augusto C. Lima, from the University of Bergen</p>
+      <p><b>Talk:</b> Assessing the influence of supraglacial lakes to the elevational changes of Tapado Glacier, Chile</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>20.02.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
 
-    <!-- Research Projects Section -->
-    <div class="page-header">
-      <h2 class="anchored">Research Projects</h2>
-    </div>
+    <details>
+      <summary>March</summary>
+      <p><b>06.03.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Richard Ott, from the University of Amsterdam</p>
+      <p><b>Talk:</b> High-resolution mapping of anthropogenic erosion in the Northern Andes</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>20.03.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Yifang Shi, from the University of Amsterdam</p>
+      <p><b>Talk:</b> Multi-source remote sensing for ecosystem dynamics monitoring</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Dr. Johannes De Groeve, from the University of Amsterdam</p>
+      <p><b>Talk:</b> Reconstruct the past with TABS (Temporal Altitudinal Biogeographic Shifts) </p>
+      <p>abstract here</p>
+    </details>
 
-    <div class="members-background-box">
-      <p><strong>Advanced geomatics and machine learning to map and study spatio-temporal patterns of natural hydrocarbon seepage in the North Sea:</strong> Identifying, mapping, and understanding the distributon and change over time of natural oil and gas leaks from seabed into North Sea through the use of advanced remote sensing techniques and machine learning frameworks.</p>
-    </div>
+    <details>
+      <summary>April</summary>
+      <p><b>10.04.2026</b></p>
+      <p><b>Guest 1:</b> Julien Vadnais, from the University of Bergen</p>
+      <p><b>Talk:</b> An end-to-end, open-source workflow for automatic mapping with drones</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>24.04.2026</b></p>
+      <p><b>Guest 1:</b> tdb</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
 
-    <div class="members-background-box">
-      <p><strong>Applications of geospatial artificial intelligence (GeoAI) to analyze landscape effects on hive health:</strong> Master's project that applied GeoAI frameworks to analyze how landscape affects beehive health.</p>
-    </div>
+    <details>
+      <summary>May</summary>
+      <p><b>08.05.2026</b></p>
+      <p><b>Guest 1:</b> Dr. Benjamin Robson, from the University of Bergen</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>22.05.2026</b></p>
+      <p><b>Guest 1:</b> Hanif Kawousi, from the University of Bergen</p>
+      <p><b>Talk:</b> Ground truthing techniques for species distribution maps</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> Sjur Barndon, from the University of Bergen</p>
+      <p><b>Talk:</b> Spatial overlap quantification</p>
+      <p>abstract here</p>
+    </details>
+
+    <details>
+      <summary>June</summary>
+      <p><b>05.06.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p> 
+      <p>abstract here</p>
+      <hr>
+      <hr>
+      <p><b>19.06.2026</b></p>
+      <p><b>Guest 1:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+      <hr>
+      <p><b>Guest 2:</b> tbd</p>
+      <p><b>Talk:</b> tbd</p>
+      <p>abstract here</p>
+    </details>
   </div>
 </div>
 
@@ -618,5 +754,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
