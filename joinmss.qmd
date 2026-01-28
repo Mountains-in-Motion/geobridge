@@ -39,9 +39,8 @@ css: joinmss-styles.scss
       </div>
       <div class="ju-banner-actions">
        <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQzJDRUM4OEFSQkdXQlpTS1BOTE9CQ1gwVi4u&origin=lprLink&route=shorturl">Join mailing list</a>
-       <a class="ju-btn ghost" href="mssschedule.qmd">Chek our guests and talks</a>
+       <a class="ju-btn ghost" href="mssschedule.qmd">Schedule</a>
       <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQkhGQkxFMlNOWVRZSjNTNVJaTVk5R1lFWC4u&route=shorturl">Propose a talk</a>
-      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:x:/g/personal/augusto_naschimento_uib_no/EXfj5JpJs6dAgqwwaEASl3wBUR--hPrwcHlqLp0ppNDDrQ?e=YmdMrA">See available dates for talks</a>
       <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:p:/g/personal/augusto_naschimento_uib_no/EYWphSekdnNPiXNOFh5HByMBi7LIw82K4bqjqSoKeCOUZQ?e=ZaShqm">Guidelines</a>
       </div>
     </div>
