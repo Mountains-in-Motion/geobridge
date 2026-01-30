@@ -41,6 +41,7 @@ website:
   page-footer: 
     left: |
       <div id="fixed-copyright">© 2025 Augusto Lima</div>
+      <div id="fixed-copyright">Funded by Bergen Universitetsfond 2025, Trond Mohn Foundation & University of Bergen</div>
     right: |
       <span class="faux-block">
         <a href="https://www.uva.nl/en">
