@@ -89,11 +89,13 @@ document.addEventListener('DOMContentLoaded', function () {
       <p><b>06.02.2026</b></p>
       <p><b>Guest 1:</b> Dr. Emiel van Loon, from the University of Amsterdam</p>
       <p><b>Talk:</b> How to interpret map correlations?</p> 
-      <p>abstract here</p>
+      <p>This presentation (the first from 2 in fact) emphasizes the limitations of measures of Association. These limitations apply to any type of data (spatial as well as non-spatial), however there are a number of special issues with spatial data that are often overlooked, especially effects of clustering and spatial autocorrelation, invisibility of orientation and the inversion of relationships with scale conversions. Fortunately there are ways to remediate these problems and design meaningful measures of association - these will be demonstrated in part 2.</p>
+      <p><a href="https://docs.google.com/presentation/d/1T4ZLrfQGaWsabEcsWwcmVgnMsIlEl671-8cnUgcWjCk/edit?slide=id.p#slide=id.p">Access talk slides here</a></p>
       <hr>
       <p><b>Guest 2:</b> Augusto C. Lima, from the University of Bergen</p>
       <p><b>Talk:</b> GeoBridge Overview</p> 
       <p>GeoBridge is both a community and a collaborative platform for students and researchers in all career stages who are interested in the application of Geographic Information Systems and Remote Sensing to landscape analysis in a changing world. In this presentation, we are going through a brief history of the GeoBridge idealization and concept, our team members and collaborators, our planned events for Spring 2026, our ongoing research projects, and the next steps with GeoBridge. We are also showcasing past and ongoing GIS/RS research from the Mountain in Motions research team, in a way to disseminate UiB research and promote further collaboration between our community.</p>
+      <p><a href="https://www.canva.com/design/DAHAQATBTMw/V8vuvYJlkeh6NEcnKUhQ3A/edit">Access talk slides here</a></p> 
       <hr>
       <hr>
       <p><b>20.02.2026</b></p>
