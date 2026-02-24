@@ -16,14 +16,14 @@ website:
     left:
       - href: about.qmd
         text: About
-      - text: Monthly Seminar Series
+      - text: GeoBridge Seminar Series
         menu:
-          - href: mssschedule.qmd
-            text: MSS Schedule
           - href: seminars.qmd
-            text: About the MSS
+            text: About the Seminar Series
+          - href: mssschedule.qmd
+            text: Schedule
           - href: joinmss.qmd
-            text: Join the MSS
+            text: Join the Seminar Series
       - text: Team & Projects
         menu:
           - href: teammembers.qmd

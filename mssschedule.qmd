@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     events: [
-      { title: 'MSS Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
-      { title: 'MSS Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
-      { title: 'MSS Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
-      { title: 'MSS Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
-      { title: 'MSS Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
-      { title: 'MSS Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
-      { title: 'MSS Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
-      { title: 'MSS Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
-      { title: 'MSS Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
-      { title: 'MSS Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
+      { title: 'Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
+      { title: 'Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
+      { title: 'Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
+      { title: 'Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
+      { title: 'Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
+      { title: 'Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
+      { title: 'Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
+      { title: 'Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
+      { title: 'Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
+      { title: 'Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
     ],
 
     // Hover tooltip (simple + reliable)
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ```{=html}
 <div class="ju-wrap">
-  <p class= "title">Monthly Seminar Series Talk Schedule</p>
+  <p class= "title">GeoBridge Seminar Series Schedule</p>
 
   <div class="ju-banner ju-card">
     <div class="ju-banner-inner">
