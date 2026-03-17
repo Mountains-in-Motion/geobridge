@@ -7,81 +7,7 @@ format:
           <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
 ---
 
-<div id="calendar"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const calendarEl = document.getElementById('calendar');
-
-  // Helper to format "HH:MM" from an ISO datetime string
-  function hhmm(iso) {
-    return iso ? iso.slice(11, 16) : '';
-  }
-
-  const calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth',
-    height: 'auto',
-    firstDay: 1,          // Monday
- 
-    initialDate: '2026-02-01',
-    validRange: {
-      start: '2026-02-01',
-      end: '2026-07-01'
-    },
-
-    // Show time in the month cells (24h format)
-    eventTimeFormat: {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    },
-
-    events: [
-      { title: 'Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
-      { title: 'Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
-      { title: 'Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
-      { title: 'Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
-      { title: 'Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
-      { title: 'Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
-      { title: 'Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
-      { title: 'Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
-      { title: 'Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
-      { title: 'Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
-    ],
-
-    // Hover tooltip (simple + reliable)
-    eventDidMount: function(info) {
-      const start = hhmm(info.event.startStr);
-      const end = info.event.endStr ? hhmm(info.event.endStr) : '';
-      info.el.title = end ? `${info.event.title} (${start}–${end})` : `${info.event.title} (${start})`;
-    }
-  });
-
-  calendar.render();
-});
-</script>
-
-
-
 ```{=html}
-<div class="ju-wrap">
-  <p class= "title">GeoBridge Seminar Series Schedule</p>
-
-  <div class="ju-banner ju-card">
-    <div class="ju-banner-inner">
-      <div>
-        <strong>Want to Talk or Watch?</strong><br/>
-        Subscribe for updates or propose a talk — we’ll get back to you quickly.
-      </div>
-      <div class="ju-banner-actions">
-       <a class="ju-btn ghost" href="https://uib.zoom.us/j/62230709853?pwd=j7nAY7V7woM5DjrEZ91TanMR2Ndmtq.1">Zoom Meeting</a>
-      <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQkhGQkxFMlNOWVRZSjNTNVJaTVk5R1lFWC4u&route=shorturl">Propose a talk</a>
-      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:x:/g/personal/augusto_naschimento_uib_no/EXfj5JpJs6dAgqwwaEASl3wBUR--hPrwcHlqLp0ppNDDrQ?e=YmdMrA">See available dates for talks</a>
-      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:p:/g/personal/augusto_naschimento_uib_no/EYWphSekdnNPiXNOFh5HByMBi7LIw82K4bqjqSoKeCOUZQ?e=ZaShqm">Guidelines</a>
-      </div>
-    </div>
-  </div>
-
   <div class="ju-faq ju-card ju-pad">
     <h2>Guest and Talk Details</h2>
     <details>
@@ -124,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>This talk showcases how multi-source remote sensing can assist our understanding of the changing planet. A wide range of data types, tools, and services will be demonstrated for a variety of remote sensing and ecological applications. I will also touch upon the state-of-the-art development (e.g. drone based remote sensing, virtual research environment, deep learning) in remote sensing domain and how it can be used for real-life ecological questions.</p>
       <hr>
       <p><b>Guest 2:</b> Dr. Johannes De Groeve, from the University of Amsterdam</p>
+      <p>Dr. Johannes De Groeve is a data manager at the Institute for Biodiversity and Ecosystem Dynamics (IBED) at the University of Amsterdam and part of the Computational Support Unit. He supports researchers in managing, structuring, and analysing ecological and biodiversity data, with a focus on databases, geospatial analysis, and reproducible workflows in R. His work promotes open and standardized data practices that improve transparency, interoperability, and long-term reuse of scientific data. In addition, he develops and teaches workshops on research data management and coding best practices to support more sustainable and reproducible research. He is also the developer of the tabs R package for reconstructing spatial configurations of altitude-bounded biogeographic systems through time.</p>
       <p><b>Talk:</b> Reconstruct the past with TABS (Temporal Altitudinal Biogeographic Shifts) </p>
-      <p>abstract here</p>
+      <p>Environmental change can strongly reshape the spatial configuration of ecosystems. Climate-driven changes in environmental boundaries such as sea level or forest line position can alter the area, connectivity, and isolation of habitats over time, particularly in systems constrained by elevation including island archipelagos, coastal shelves, and alpine environments. In this seminar, I introduce the tabs (Temporal Altitudinal Biogeographic Shifts) R package, an open-source GIS workflow for reconstructing and analysing spatial configurations of altitude-bounded biogeographic systems through time. Tabs enables researchers to model area and connectivity changes under different environmental scenarios, including sea-level fluctuations and forest-line shifts. The workflow is designed to be user-friendly, requiring only a small set of parameters to quickly explore spatial changes across environmental scenarios. The package focuses on standardized spatial outputs in open formats that can be easily integrated with other GIS tools and analytical pipelines. By relying on open-source software and transparent data structures, tabs encourages reproducible research and improves interoperability and reuse of spatial analyses.</p>
     </details>
 
     <details>
@@ -195,4 +122,76 @@ document.addEventListener('DOMContentLoaded', function () {
     </details>
   </div>
 </div>
+
+<div class="ju-wrap">
+  <p class= "title">GeoBridge Seminar Series Schedule</p>
+
+  <div class="ju-banner ju-card">
+    <div class="ju-banner-inner">
+      <div>
+        <strong>Want to Talk or Watch?</strong><br/>
+        Subscribe for updates or propose a talk — we’ll get back to you quickly.
+      </div>
+      <div class="ju-banner-actions">
+       <a class="ju-btn ghost" href="https://uib.zoom.us/j/62230709853?pwd=j7nAY7V7woM5DjrEZ91TanMR2Ndmtq.1">Zoom Meeting</a>
+      <a class="ju-btn ghost" href="https://forms.office.com/pages/responsepage.aspx?id=vCSKZI2pJUCcYEjBmhQgaRDLeEr1KmNIhe_T6TpcoFxUQkhGQkxFMlNOWVRZSjNTNVJaTVk5R1lFWC4u&route=shorturl">Propose a talk</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:x:/g/personal/augusto_naschimento_uib_no/EXfj5JpJs6dAgqwwaEASl3wBUR--hPrwcHlqLp0ppNDDrQ?e=YmdMrA">See available dates for talks</a>
+      <a class="ju-btn ghost" href="https://universityofbergen-my.sharepoint.com/:p:/g/personal/augusto_naschimento_uib_no/EYWphSekdnNPiXNOFh5HByMBi7LIw82K4bqjqSoKeCOUZQ?e=ZaShqm">Guidelines</a>
+      </div>
+    </div>
+  </div>
 ```
+
+<div id="calendar"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarEl = document.getElementById('calendar');
+
+  // Helper to format "HH:MM" from an ISO datetime string
+  function hhmm(iso) {
+    return iso ? iso.slice(11, 16) : '';
+  }
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    height: 'auto',
+    firstDay: 1,          // Monday
+ 
+    initialDate: '2026-02-01',
+    validRange: {
+      start: '2026-02-01',
+      end: '2026-07-01'
+    },
+
+    // Show time in the month cells (24h format)
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    },
+
+    events: [
+      { title: 'Seminar', start: '2026-02-06T10:00', end: '2026-02-06T11:00' },
+      { title: 'Seminar', start: '2026-02-20T14:00', end: '2026-02-20T15:00' },
+      { title: 'Seminar', start: '2026-03-06T10:00', end: '2026-03-06T11:00' },
+      { title: 'Seminar', start: '2026-03-20T14:00', end: '2026-03-20T15:00' },
+      { title: 'Seminar', start: '2026-04-10T10:00', end: '2026-04-10T11:00' },
+      { title: 'Seminar', start: '2026-04-24T14:00', end: '2026-04-24T15:00' },
+      { title: 'Seminar', start: '2026-05-08T10:00', end: '2026-05-08T11:00' },
+      { title: 'Seminar', start: '2026-05-22T14:00', end: '2026-05-22T15:00' },
+      { title: 'Seminar', start: '2026-06-05T10:00', end: '2026-06-05T11:00' },
+      { title: 'Seminar', start: '2026-06-19T14:00', end: '2026-06-19T15:00' }
+    ],
+
+    // Hover tooltip (simple + reliable)
+    eventDidMount: function(info) {
+      const start = hhmm(info.event.startStr);
+      const end = info.event.endStr ? hhmm(info.event.endStr) : '';
+      info.el.title = end ? `${info.event.title} (${start}–${end})` : `${info.event.title} (${start})`;
+    }
+  });
+
+  calendar.render();
+});
+</script>
