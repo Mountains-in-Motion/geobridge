@@ -14104,5 +14104,22 @@ main.quarto-banner-title-block > section:first-child > h4 {
         a {
             color: #3093CF ;
         }
+        
+        .ju-banner-actions {
+             margin: 0.5rem 0 1rem;
+             text-align: center;
+        }
+
+        .gb-aside .ju-btn {
+            display: inline-block;
+            background: white;
+            font-size: 1.1rem;
+            color: #0f172a !important;
+            border: 1px solid #d1d5db;
+            border-radius: 14px;
+            padding: 1rem 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
 
 // quarto-scss-analysis-annotation { "origin": null }

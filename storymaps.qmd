@@ -1,0 +1,91 @@
+---
+format:
+  html:
+    page-layout: full
+    code-fold: true
+    smooth-scroll: true
+    toc: true
+css: joinmss-styles.scss
+---
+
+```{=html}
+<div class="gb-hero">
+    <div class="gb-wrap">
+        <p class= "title">ArcGIS StoryMaps Workshop</p>
+        <p class="gb-lead">Explore the art of storytelling with spatial data and communicate your research through interactive maps and visual narratives.</p>
+    </div>
+</div>
+
+<!-- Focus areas -->
+<section class="gb-focus">
+  <div class="ju-cards ju-grid-cards">
+    <article class="ju-card ju-pad">
+      <div class="ju-card-icon">📖</div>
+      <h3>How to structure a StoryMap narrative</h3>
+      <p>Learn how to organize and develop compelling scientific narratives</p>
+    </article>
+    <article class="ju-card ju-pad">
+      <div class="ju-card-icon">📊</div>
+      <h3>Best practices for communicating spatial data</h3>
+      <p>Learn how to effectively present and explain spatial data to diverse audiences</p>
+    </article>
+    <article class="ju-card ju-pad">
+      <div class="ju-card-icon">🗺️</div>
+      <h3>Building your own StoryMap</h3>
+      <p>Learn how to integrate maps, images, and multimedia into your own ArcGIS StoryMaps</p>
+    </article>
+  </div>
+</section>
+
+<!-- Two-column split -->
+<div class="gb-wrap">
+    <div class="gb-grid">
+        <article class="gb-card gb-pad gb-prose" aria-labelledby="about-title">
+            <h2 id="about-title">About</h2>
+            <p>As part of the <strong>GeoBridge community</strong>, we are organizing a <strong>two-day hands-on workshop on ArcGIS StoryMaps</strong>, a powerful approach for communicating research through interactive maps and visual narratives. StoryMaps allow you to combine maps, spatial data, images, and multimedia to present complex environmental data in an accessible and engaging way. This workshop focuses on translating spatial analyses into compelling visual narratives, bridging the gap between data, interpretation, and communication.</p>
+            <p>During the workshop, participants will learn how to design and build their own StoryMaps using ArcGIS StoryMaps, with a focus on effectively translating spatial analyses into compelling visual narratives.</p>
+            <p>This workshop is ideal for researchers, technicians and students interested in <strong>visualizing geospatial analyses, communicating research results, and developing interactive scientific storytelling tools</strong>.</p>
+            <hr>
+            <h2 id="about-title">Instructor</h2>
+            <div class="members-container">
+              <div class="member-circle">
+                <img src="img/stacy.png" alt="Stacy Shinneman" class="member-image">
+              </div>
+            </div>
+            <p>The workshop will be led by <strong><a href="https://www.uva.nl/en/profile/s/h/s.shinneman/s.shinneman.html#About-my-work-at-IBED">Stacy Shinneman</a></strong> (University of Amsterdam), who has extensive experience in developing StoryMaps for environmental research and science communication. Examples of StoryMaps developed by Stacy Shinneman are:</p>
+            <ul>
+              <li><a href="https://storymaps.arcgis.com/stories/0866ade8a3a74ecd9764733da8674c02">Arctic migratory birds pushed over the edge</a></li>
+              <li><a href="https://storymaps.arcgis.com/stories/c1bce45e4d7f4a6c91e5cf91acee1ae5">Monitoring wildlife in the Amsterdam water supply dunes</a></li>
+              <li><a href="https://storymaps.arcgis.com/stories/51e72d6f4a7049e8a00cd0cd8861e22a">Interactions between birds and offshore wind farms</a></li>
+              <li><a href="https://storymaps.arcgis.com/stories/21c05649b88647a9928d5a3f3c2cc134">Mapping the geomorphology of mountainous areas</a></li>
+            </ul>
+            <p>Her ESRI StoryMap “Arctic migratory birds pushed over the edge” has been selected as a finalist in the <a href="https://2025-arcgis-storymaps-competition-story.hub.arcgis.com/pages/arcgis-living-atlas-1">2025 ArcGIS StoryMaps Competition (Environment Category – Professional Track)</a>.</p>
+        </article>
+    
+        <aside class="gb-card gb-pad gb-aside" aria-label="Quick facts">
+            <h2>Practical Information</h2>
+            <div class="ju-banner-actions">
+              <a class="ju-btn ghost" href="https://forms.office.com/e/JBRMQQYVQi?origin=lprLink">Apply Here</a>
+            </div>
+            <div class="gb-stat"><span class="icon">📅</span> <span>22--23 April</span></div>
+            <div class="gb-stat"><span class="icon">📍</span> <span>In-person event (ca. 8:30-16:00, at UiB)</span></div>
+            <div class="gb-stat"><span class="icon">👥</span> <span>20 Participants</span></div>
+            <div class="gb-stat"><span class="icon">💰</span> <span>150 NOK fee</span></div>
+            <div class="gb-stat"><span class="icon">⏰</span> <span>31st March at 13:00 deadline</span></div>
+
+            <h3>Requirements</h3>
+            <ul class="gb-list">
+              <li><div class="gb-stat"><b>1</b><span>To participate in this workshop, you should have a basic understanding of Esri ArcGIS and experience with creating maps and spatial analysis.</span></li>
+              <li><div class="gb-stat"><b>2</b><span>Participants are expected to bring their own data to work with during the workshop.</span></li>
+            </ul>
+
+            <h3>Need Help?</h3>
+            <ul class="gb-list">
+                <li><span class="icon">✉️</span><span>If cost is a concern, please get in touch with us at augusto.naschimento@uib.no</span></li>
+                <li><span class="icon">📚</span><span>If you do not yet have this background, we will provide you a self-paced introductory module (c. 8h) to help you acquire the necessary basics</span></li>
+                <li><span class="icon">💾</span><span>If you do not have your own data, please get in touch with us and we can work with you to prepare your data for the workshop.</span></li>
+            </ul>
+        </aside>
+    </div>
+</div>
+```

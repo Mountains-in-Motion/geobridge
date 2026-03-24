@@ -24,6 +24,10 @@ website:
             text: Schedule
           - href: joinmss.qmd
             text: Join the Seminar Series
+      - text: StoryMaps Workshop
+        menu:
+          - href: storymaps.qmd
+            text: About the Workshop
       - text: Team & Projects
         menu:
           - href: teammembers.qmd
