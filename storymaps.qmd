@@ -81,7 +81,6 @@ css: joinmss-styles.scss
 
             <h3>Need Help?</h3>
             <ul class="gb-list">
-                <li><span class="icon">✉️</span><span>If cost is a concern, please get in touch with us at augusto.naschimento@uib.no</span></li>
                 <li><span class="icon">📚</span><span>If you do not yet have this background, we will provide you a self-paced introductory module (c. 8h) to help you acquire the necessary basics</span></li>
                 <li><span class="icon">💾</span><span>If you do not have your own data, please get in touch with us and we can work with you to prepare your data for the workshop.</span></li>
             </ul>
