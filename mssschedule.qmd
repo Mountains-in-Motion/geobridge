@@ -63,12 +63,9 @@ format:
       <summary>April</summary>
       <p><b>10.04.2026</b></p>
       <p><b>Guest 1:</b> Julien Vadnais, from the University of Bergen</p>
+      <p>Julien is a PhD candidate with a background in Geomatics and Remote Sensing. In his current research, he develops geospatial deep learning algorithms to map marine oil slicks from satellite remote sensing, primarily SAR. Progress on this notoriously challenging task will enable new analyses of hydrocarbon seepage systems which have important environmental implications at the basin scale (e.g. petroleum exploration, geological storage of carbon).</p>
       <p><b>Talk:</b> An end-to-end, open-source workflow for automatic mapping with drones</p> 
-      <p>abstract here</p>
-      <hr>
-      <p><b>Guest 2:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p> 
-      <p>abstract here</p>
+      <p>With all the buzz surrounding new AI methods for geospatial mapping, it may be difficult to settle on learning one approach over another. In this talk, I will present an automatic mapping workflow that is relatively simple to learn yet powerful. Together, we will go through all the steps to train and use a deep learning model for conducting semantic segmentation, i.e., pixel classification, on any sort of aerial images.This workflow, based on the recent work of Adrien Le Guillou (access his github <a href="https://github.com/aleguillou1/SemanticSeg4EO_Qgis">here</a>), uses fully open-source software! You will need the following: 1) Install miniforge (<a href="https://conda-forge.org/download/">conda-forge | community-driven packaging for conda</a>), 2) Install QGIS (>= 3.16), 3) Install a CUDA driver versions: 12.6; 12.8; or 13.0 (<a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA Toolkit Archive | NVIDIA Developer</a>), and 4) Have a graphic card in your computer (>=8GB of memory recommended).</p>
       <hr>
       <hr>
       <p><b>24.04.2026</b></p>
