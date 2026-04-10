@@ -70,20 +70,20 @@ format:
       <hr>
       <p><b>24.04.2026</b></p>
       <p><b>Guest 1:</b> Berend-Christiaan Wijers, from the University of Amsterdam</p>
-      <p><b>Talk:</b> tbd</p>
-      <p>abstract here</p>
+      <p><b>Talk:</b> Birds, Beams and Big Data: supercomputing a 150 TB Weather Radar Archive</p>
+      <p></p>
       <hr>
-      <p><b>Guest 2:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p>
-      <p>abstract here</p>
+      <p><b>Guest 2:</b> Brittany La Fae Hatch, from the University of Bergen</p>
+      <p><b>Talk:</b> Glacier time series analysis using photogrammetry methods</p>
+      <p></p>
     </details>
 
     <details>
       <summary>May</summary>
       <p><b>08.05.2026</b></p>
       <p><b>Guest 1:</b> Dr. Benjamin Robson, from the University of Bergen</p>
-      <p><b>Talk:</b> tbd</p> 
-      <p>abstract here</p>
+      <p><b>Talk:</b> Automated analysis of historical aerial photographs to study national scale glacier change in New Zealand</p> 
+      <p></p>
       <hr>
       <p><b>Guest 2:</b> tbd</p>
       <p><b>Talk:</b> tbd</p> 
@@ -93,33 +93,33 @@ format:
       <p><b>22.05.2026</b></p>
       <p><b>Guest 1:</b> Hanif Kawousi, from the University of Bergen</p>
       <p><b>Talk:</b> Ground truthing techniques for species distribution maps</p>
-      <p>abstract here</p>
+      <p></p>
       <hr>
       <p><b>Guest 2:</b> Sjur Barndon, from the University of Bergen</p>
       <p><b>Talk:</b> Spatial overlap quantification</p>
-      <p>abstract here</p>
+      <p></p>
     </details>
 
     <details>
       <summary>June</summary>
       <p><b>05.06.2026</b></p>
-      <p><b>Guest 1:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p> 
-      <p>abstract here</p>
+      <p><b>Guest 1:</b> Suzette Flantua</p>
+      <p><b>Talk:</b>Alpine biogeography: Insights from remote sensing</p> 
+      <p></p>
       <hr>
-      <p><b>Guest 2:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p> 
-      <p>abstract here</p>
+      <p><b>Guest 2:</b></p>
+      <p><b>Talk:</b></p> 
+      <p>      </p>
       <hr>
       <hr>
       <p><b>19.06.2026</b></p>
-      <p><b>Guest 1:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p>
-      <p>abstract here</p>
+      <p><b>Guest 1:</b> Augusto Lima</p>
+      <p><b>Talk:</b> GLACIMONTIS: a global geodatabase of Last Glacial Maximum ice extents</p>
+      <p></p>
       <hr>
-      <p><b>Guest 2:</b> tbd</p>
-      <p><b>Talk:</b> tbd</p>
-      <p>abstract here</p>
+      <p><b>Guest 2:</b></p>
+      <p><b>Talk:</b></p>
+      <p></p>
     </details>
   </div>
 </div>
