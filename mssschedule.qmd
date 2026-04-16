@@ -70,12 +70,14 @@ format:
       <hr>
       <p><b>24.04.2026</b></p>
       <p><b>Guest 1:</b> Berend-Christiaan Wijers, from the University of Amsterdam</p>
+      <p>Berend-Christiaan Wijers is a High Performance Computing expert at the Institute for Biodiversity and Ecosystem Dynamics (IBED) and a Research Software Engineer for the Animal Movement Ecology (AME) group at the University of Amsterdam. He holds Bachelor’s and Master’s degrees in Earth Sciences with a specialization in programming and modelling, and has assisted in statistics and programming courses at the University of Amsterdam. His work focuses on compute efficiency, scaling research workflows to continental scales, and developing robust data processing, data organization and e-infrastructure solutions. Building on his experience with radar aeroecology in the cloud, he is developing a Virtual Lab that abstracts much of the complexity of cloud computing, making continental-scale processing of weather radar data more accessible to the broader AME community. He provides computational support within IBED and collaborates with SURF on advanced research computing services.</p>
       <p><b>Talk:</b> Birds, Beams and Big Data: supercomputing a 150 TB Weather Radar Archive</p>
-      <p></p>
+      <p>Weather radar archives hold enormous potential for ecology and remote sensing, but the practicalities of processing 150 TB of data can easily stop a project before it starts. In this talk I will walk through our journey from the first ad-hoc scripts to a production workflow that routinely processes multiple terabytes per hour on national supercomputers. Starting with simple R and Python scripts on “whatever storage we could get,” we gradually converged on one scalable process: standardized storage on S3, strict naming and metadata conventions, and a growing layer of automation using tools such as Kubernetes and Argo. The result is a quality-controlled, 150 TB radar archive accessible via APIs, R packages, command line tools, and a Virtual Lab based on Jupyter notebooks. Along the way I will share concrete lessons on team communication, avoiding duplicated work, and why starting early with an imperfect solution is often the fastest route to a robust one.</p>
       <hr>
       <p><b>Guest 2:</b> Brittany La Fae Hatch, from the University of Bergen</p>
+      <p>Brittany is a subject consultant and teaching assistant at the Department of Geography in the University of Bergen. She has a master’s degree in physical geography, in which she specialized in remote sensing of glaciers. Her research interests are focused on using GIS and remote sensing methods to analyze glacier fluctuations over time.</p>
       <p><b>Talk:</b> Glacier time series analysis using photogrammetry methods</p>
-      <p></p>
+      <p>This talk will present the methods used to generate a time series of Blåskavlen glacier in Lofoten, northern Norway. The primary method is photogrammetry, a technique that enables the creation of 3D models from archival aerial photographs. By combining historical imagery with LiDAR and UAV data, it was produced a high-resolution decadal time series spanning 1952 to 2024. This work examines changes in glacier elevation, mass balance, and surface velocity.</p>
     </details>
 
     <details>
